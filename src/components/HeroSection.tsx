@@ -20,12 +20,12 @@ export const HeroSection = () => {
         {/* Profile Picture */}
         <div className="mb-8 animate-fade-in">
           <div className="w-48 h-48 mx-auto mb-6 relative">
+            <div className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full blur-lg opacity-60"></div>
             <img
               src="/lovable-uploads/69ae9dc8-4396-4e70-b9ad-5bf3c63803b8.png"
               alt="Illa Bhaskararao"
-              className="w-full h-full object-cover rounded-full shadow-glow border-4 border-primary/20 animate-float"
+              className="relative w-full h-full object-cover rounded-full shadow-glow border-4 border-card"
             />
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 animate-pulse"></div>
           </div>
         </div>
 
@@ -35,11 +35,15 @@ export const HeroSection = () => {
             <span className="text-gradient-primary">Illa Bhaskararao</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4">
-            Software Tester & Web Developer
+            Software Tester & AI Web Developer
           </p>
-          <p className="text-lg text-accent max-w-2xl mx-auto">
+          <p className="text-lg text-accent max-w-2xl mx-auto mb-6">
             "Crafting bug-free experiences & AI-powered web solutions."
           </p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full text-accent font-medium">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            Available for Remote & Office Work
+          </div>
         </div>
 
         {/* Social Links */}

@@ -26,7 +26,7 @@ export const ProjectsSection = () => {
     {
       title: "Sri Mandir - Puja & Chadhava App Testing",
       description: "Conducted comprehensive white-box testing, validated navigation logic, and reported critical UI/UX bugs for improvement of the religious application.",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
       tech: ["Manual Testing", "White-box Testing", "UI/UX Testing", "JIRA", "Bug Reporting"],
       features: [
         "Comprehensive white-box testing strategy",
@@ -126,24 +126,15 @@ export const ProjectsSection = () => {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex space-x-3 pt-4">
+                  <div className="flex pt-4">
                     <Button
                       variant="outline"
                       size="sm"
-                      className="flex-1 group-hover:bg-primary group-hover:text-primary-foreground transition-smooth"
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-smooth"
                       onClick={() => window.open(project.github, '_blank')}
                     >
                       <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button
-                      variant="default"
-                      size="sm"
-                      className="flex-1"
-                      onClick={() => window.open(project.demo, '_blank')}
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      View Project
+                      View Code
                     </Button>
                   </div>
                 </div>

@@ -47,7 +47,7 @@ export const AboutSection = () => {
               Illa Bhaskararao is a passionate Computer Science graduate from NIST University, 
               skilled in software testing and web development. With strong command over tools 
               like Selenium, Postman, and JIRA, he specializes in delivering robust, 
-              user-friendly, and AI-integrated solutions.
+              user-friendly, and AI-integrated solutions. Available for both remote and office-based work.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               With a keen eye for detail and a passion for quality assurance, I combine 

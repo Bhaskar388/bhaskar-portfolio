@@ -83,7 +83,7 @@ export const ContactSection = () => {
                     <span className="font-medium text-foreground">Location</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    India • Available for Remote Work
+                    India • Available for Remote & Office Work
                   </p>
                 </div>
               </CardContent>
@@ -144,14 +144,11 @@ export const ContactSection = () => {
                   </div>
                   
                   <Button
-                    type="submit"
+                    type="button"
                     variant="hero"
                     size="lg"
                     className="w-full text-white"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      window.open('mailto:bhaskarilla175@gmail.com', '_blank');
-                    }}
+                    onClick={() => window.location.href = 'mailto:bhaskarilla175@gmail.com'}
                   >
                     <Send className="h-5 w-5 mr-2" />
                     Send Message
