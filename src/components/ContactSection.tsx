@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, Linkedin, Github, MapPin, Send } from 'lucide-react';
 
 export const ContactSection = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:bhaskarilla175@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    window.location.href = mailtoLink;
+    
+    // Reset form
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  };
+
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6" />,
@@ -97,7 +114,7 @@ export const ContactSection = () => {
                 <h3 className="text-xl font-bold text-gradient-secondary mb-6">
                   Send me a message
                 </h3>
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
@@ -105,8 +122,11 @@ export const ContactSection = () => {
                       </label>
                       <input
                         type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
                         placeholder="Enter your name"
+                        required
                       />
                     </div>
                     <div>
@@ -115,8 +135,11 @@ export const ContactSection = () => {
                       </label>
                       <input
                         type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
                         placeholder="Enter your email"
+                        required
                       />
                     </div>
                   </div>
@@ -127,8 +150,11 @@ export const ContactSection = () => {
                     </label>
                     <input
                       type="text"
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
                       className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
                       placeholder="What's this about?"
+                      required
                     />
                   </div>
                   
@@ -138,17 +164,19 @@ export const ContactSection = () => {
                     </label>
                     <textarea
                       rows={6}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth resize-none"
                       placeholder="Tell me about your project or just say hello!"
+                      required
                     ></textarea>
                   </div>
                   
                   <Button
-                    type="button"
+                    type="submit"
                     variant="hero"
                     size="lg"
                     className="w-full text-white"
-                    onClick={() => window.location.href = 'mailto:bhaskarilla175@gmail.com'}
                   >
                     <Send className="h-5 w-5 mr-2" />
                     Send Message
@@ -161,7 +189,7 @@ export const ContactSection = () => {
 
         {/* Quick Action Cards */}
         <div className="grid md:grid-cols-3 gap-6 mt-12">
-          <Card className="shadow-card hover:shadow-glow transition-smooth group cursor-pointer" onClick={() => window.open('mailto:bhaskarilla175@gmail.com', '_blank')}>
+          <Card className="shadow-card hover:shadow-glow transition-smooth group cursor-pointer" onClick={() => window.location.href = 'mailto:bhaskarilla175@gmail.com'}>
             <CardContent className="p-6 text-center">
               <div className="bg-gradient-to-r from-blue-500 to-cyan-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Mail className="h-8 w-8 text-white" />

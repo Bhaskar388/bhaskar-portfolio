@@ -20,11 +20,12 @@ export const HeroSection = () => {
         {/* Profile Picture */}
         <div className="mb-8 animate-fade-in">
           <div className="w-48 h-48 mx-auto mb-6 relative">
-            <div className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full blur-lg opacity-60"></div>
+            <div className="absolute -inset-3 bg-gradient-to-r from-primary via-accent to-primary rounded-full blur-xl opacity-70 dark:opacity-60 animate-pulse"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 dark:from-primary/20 dark:to-accent/20 rounded-full"></div>
             <img
               src="/lovable-uploads/69ae9dc8-4396-4e70-b9ad-5bf3c63803b8.png"
               alt="Illa Bhaskararao"
-              className="relative w-full h-full object-cover rounded-full shadow-glow border-4 border-card"
+              className="relative w-full h-full object-cover rounded-full shadow-glow border-4 border-white dark:border-card backdrop-blur-sm"
             />
           </div>
         </div>
@@ -40,8 +41,8 @@ export const HeroSection = () => {
           <p className="text-lg text-accent max-w-2xl mx-auto mb-6">
             "Crafting bug-free experiences & AI-powered web solutions."
           </p>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full text-accent font-medium">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 dark:from-accent/20 dark:to-accent/30 rounded-full text-green-700 dark:text-accent font-medium border border-green-200 dark:border-accent/30 backdrop-blur-sm">
+            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/50"></div>
             Available for Remote & Office Work
           </div>
         </div>

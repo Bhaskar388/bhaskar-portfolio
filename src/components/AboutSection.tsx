@@ -44,15 +44,17 @@ export const AboutSection = () => {
               Passionate Developer & Tester
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Illa Bhaskararao is a passionate Computer Science graduate from NIST University, 
-              skilled in software testing and web development. With strong command over tools 
-              like Selenium, Postman, and JIRA, he specializes in delivering robust, 
-              user-friendly, and AI-integrated solutions. Available for both remote and office-based work.
+              Welcome to my portfolio! I'm Illa Bhaskararao, and I'm excited to share my journey with you. 
+              As a passionate Computer Science graduate from NIST University, I've dedicated myself to 
+              mastering software testing and web development. Through this website, I want to show you 
+              who I am - someone who's skilled with tools like Selenium, Postman, and JIRA, and who 
+              specializes in creating robust, user-friendly, and AI-integrated solutions.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              With a keen eye for detail and a passion for quality assurance, I combine 
-              technical expertise with creative problem-solving to build exceptional 
-              digital experiences that users love.
+              What drives me? A keen eye for detail and an unwavering passion for quality assurance. 
+              I believe in combining technical expertise with creative problem-solving to build 
+              exceptional digital experiences. I'm here to tell you that I'm ready for new challenges 
+              and opportunities, whether remote or office-based work.
             </p>
             
             <div className="flex items-center space-x-4 pt-4">

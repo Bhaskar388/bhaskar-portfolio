@@ -83,7 +83,7 @@ export const Footer = () => {
             <div className="space-y-2 text-muted-foreground">
               <p>📧 bhaskarilla175@gmail.com</p>
               <p>📞 +91-6301207309</p>
-              <p>📍 India • Remote Available</p>
+              <p>📍 India • Remote & Office Work Available</p>
             </div>
           </div>
         </div>

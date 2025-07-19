@@ -26,7 +26,7 @@ export const ProjectsSection = () => {
     {
       title: "Sri Mandir - Puja & Chadhava App Testing",
       description: "Conducted comprehensive white-box testing, validated navigation logic, and reported critical UI/UX bugs for improvement of the religious application.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+      image: "/src/assets/sri-mandir-app.png",
       tech: ["Manual Testing", "White-box Testing", "UI/UX Testing", "JIRA", "Bug Reporting"],
       features: [
         "Comprehensive white-box testing strategy",
